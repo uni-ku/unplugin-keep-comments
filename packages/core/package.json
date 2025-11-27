@@ -1,0 +1,50 @@
+{
+  "name": "@uni-ku/unplugin-keep-comments",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "💬 在构建产物中保留指定的注释",
+  "author": "xiaohe0601 <xiaohe0601@outlook.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/uni-ku/unplugin-keep-comments#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uni-ku/unplugin-keep-comments.git"
+  },
+  "bugs": "https://github.com/uni-ku/unplugin-keep-comments/issues",
+  "keywords": [
+    "unplugin",
+    "rolldown",
+    "rollup"
+  ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./rolldown": "./dist/rolldown.js",
+    "./rollup": "./dist/rollup.js",
+    "./types": "./dist/types.js",
+    "./*": "./*"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown"
+  },
+  "dependencies": {
+    "magic-string-ast": "catalog:ast",
+    "oxc-parser": "catalog:ast",
+    "unplugin": "catalog:build",
+    "unplugin-utils": "catalog:build"
+  }
+}

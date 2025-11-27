@@ -1,0 +1,41 @@
+{
+  "name": "@unplugin-keep-comments/monorepo",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.23.0",
+  "scripts": {
+    "prepare": "simple-git-hooks",
+    "postinstall": "nr build",
+    "play": "nr -C playground dev",
+    "build": "nr -r --filter=./packages/* build",
+    "release": "bumpp -r",
+    "lint": "eslint --cache",
+    "lint:fix": "nr lint --fix",
+    "lint:type": "tsc --noEmit",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@antfu/ni": "catalog:cli",
+    "@types/node": "catalog:types",
+    "@xiaohe01/eslint-config": "catalog:xiaohe",
+    "@xiaohe01/tsconfig": "catalog:xiaohe",
+    "bumpp": "catalog:cli",
+    "eslint": "catalog:lint",
+    "esno": "catalog:script",
+    "lint-staged": "catalog:lint",
+    "pncat": "catalog:cli",
+    "simple-git-hooks": "catalog:lint",
+    "tsdown": "catalog:build",
+    "typescript": "catalog:tsc",
+    "vitest": "catalog:test"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

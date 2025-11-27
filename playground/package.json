@@ -1,0 +1,14 @@
+{
+  "name": "@unplugin-keep-comments/playground",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build:tsdown": "tsdown",
+    "build:unbuild": "unbuild"
+  },
+  "devDependencies": {
+    "@uni-ku/unplugin-keep-comments": "workspace:^",
+    "unbuild": "catalog:build"
+  }
+}
