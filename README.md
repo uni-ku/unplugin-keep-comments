@@ -5,7 +5,6 @@
 [![github stars][github-stars-src]][github-stars-href]
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![bundle][bundle-src]][bundle-href]
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
@@ -90,8 +89,6 @@ MIT [LICENSE](./LICENSE)
 [npm-version-href]: https://npmjs.com/package/@uni-ku/unplugin-keep-comments
 [npm-downloads-src]: https://img.shields.io/npm/dm/@uni-ku/unplugin-keep-comments?style=flat&color=92dcd2&labelColor=18181b
 [npm-downloads-href]: https://npmjs.com/package/@uni-ku/unplugin-keep-comments
-[bundle-src]: https://img.shields.io/bundlephobia/minzip/@uni-ku/unplugin-keep-comments?style=flat&color=92dcd2&labelColor=18181b&label=minzip
-[bundle-href]: https://bundlephobia.com/result?p=@uni-ku/unplugin-keep-comments
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-92dcd2?style=flat&labelColor=18181b
 [jsdocs-href]: https://www.jsdocs.io/package/@uni-ku/unplugin-keep-comments
 [license-src]: https://img.shields.io/github/license/uni-ku/unplugin-keep-comments.svg?style=flat&color=92dcd2&labelColor=18181b
