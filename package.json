@@ -8,7 +8,7 @@
     "prepare": "simple-git-hooks",
     "postinstall": "nr build",
     "play": "nr -C playground dev",
-    "build": "nr -r --filter=./packages/* build",
+    "build": "nr -r --filter='./packages/*' build",
     "release": "bumpp -r",
     "lint": "eslint --cache",
     "lint:fix": "nr lint --fix",
