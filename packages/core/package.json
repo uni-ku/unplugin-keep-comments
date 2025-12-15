@@ -1,7 +1,7 @@
 {
   "name": "@uni-ku/unplugin-keep-comments",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "💬 在构建产物中保留指定的注释",
   "author": "xiaohe0601 <xiaohe0601@outlook.com>",
   "license": "MIT",

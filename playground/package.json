@@ -1,7 +1,7 @@
 {
   "name": "@unplugin-keep-comments/playground",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "build:tsdown": "tsdown",
