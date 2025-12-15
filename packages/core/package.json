@@ -17,15 +17,27 @@
     "rollup"
   ],
   "exports": {
-    ".": "./dist/index.js",
-    "./rolldown": "./dist/rolldown.js",
-    "./rollup": "./dist/rollup.js",
-    "./types": "./dist/types.js",
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./rolldown": {
+      "import": "./dist/rolldown.mjs",
+      "require": "./dist/rolldown.cjs"
+    },
+    "./rollup": {
+      "import": "./dist/rollup.mjs",
+      "require": "./dist/rollup.cjs"
+    },
+    "./types": {
+      "import": "./dist/types.mjs",
+      "require": "./dist/types.cjs"
+    },
     "./*": "./*"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
   "typesVersions": {
     "*": {
       "*": [
